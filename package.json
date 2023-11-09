@@ -1,0 +1,22 @@
+{
+  "name": "rolex-ecomerce-site",
+  "version": "1.0.0",
+  "description": "This is an ecomerce site build using HTML,CSS and JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rasan3-1416/Rolex-ecomerce-site.git"
+  },
+  "author": "Md. Rakib Hasan <md.rakibhasan3.1416@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rasan3-1416/Rolex-ecomerce-site/issues"
+  },
+  "homepage": "https://github.com/Rasan3-1416/Rolex-ecomerce-site#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
