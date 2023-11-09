@@ -4,7 +4,8 @@
   "description": "This is an ecomerce site build using HTML,CSS and JavaScript.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-tail-css": "tailwindcss -i ./src/tailwind.css -o ./assets/tailwind.css --watch",
+    "minify-tail-css": "tailwindcss -i ./src/tailwind.css -o ./assets/tailwind.css --watch --minify"
   },
   "repository": {
     "type": "git",
