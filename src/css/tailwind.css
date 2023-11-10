@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Header Hegiht */
+        --header-height: 3.5rem;
+        
+        /* Color pallets variable values for default theme */
+        --container-color: 0deg 0% 100%;
+        --body-color: 0deg 0% 99%;
+        --border-color: 0deg 0% 94%;
+        --first-color: 31deg 100% 70%;
+        --btn-color: 0deg 0% 17%;
+        --btn-color-alt: 0deg 0% 21%;
+        --text-color: 0deg 0% 35%;
+        --text-color-light: 0deg 0% 55%;
+    }
+}
+
+body.dark-theme {
+    /* Color pallets variable values for dark theme */
+    --container-color: 0deg 0% 16%;
+    --body-color: 0deg 0% 12%;
+    --border-color: 0deg 0% 20%;
+    --first-color: 31deg 76% 74%;
+    --btn-color: 0deg 0% 24%;
+    --btn-color-alt: 0deg 0% 28%;
+    --text-color: 0deg 0% 75%;
+}

@@ -13,16 +13,19 @@
         <!--=============== SWIPER CSS ===============--> 
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
+        <!--=============== Google Font Link ===============--> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="./src/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/tailwind.css">
 
         <title>Rolex watches website</title>
     </head>
-    <body>
+    <body class="font-body">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a class="nav__logo" href="#">
+                <a class="nav__logo fs-2xl" href="#">
                     <i class='bx bxs-watch nav__logo-icon'></i> Rolex
                 </a>
                 <div class="nav__menu" id="nav-menu">
@@ -40,25 +43,29 @@
                             <a class="nav__link" href="#new">New</a>
                         </li>
                     </ul>
-                    <div class="nav__close" id="nav-close">
+                    <button class="nav__close" id="nav-close">
                         <i class='bx bx-x'></i>
-                    </div>
+                    </button>
                 </div>
                 <div class="nav__btns">
                     <!-- Dark Theme Button -->
-                    <i class='bx bx-moon change-theme' id="theme-button"></i>
-                    <div class="nav__shop" id="cart-shop">
+                    <button>
+                        <i class='bx bx-moon change-theme' id="theme-button"></i>
+                    </button>
+                    <!-- Shop Button -->
+                    <button class="nav__shop" id="cart-shop">
                         <i class='bx bx-cart' ></i>
-                    </div>
-                    <div class="nav__toggle" id="nav-toggle">
+                    </button>
+                    <!-- Navigation Toggle Button -->
+                    <button class="nav__toggle" id="nav-toggle">
                         <i class='bx bx-grid-alt' ></i>
-                    </div>
+                    </button>
                 </div>
             </nav>
         </header>
 
         <!--==================== CART ====================-->
-        <div class="cart" id="cart">
+        <div class="cart hidden" id="cart">
             <i class='bx bx-x cart__close' id="cart-close"></i>
             <h2 class="cart__title-center">My Cart</h2>
             <div class="cart__container">
@@ -132,7 +139,7 @@
             </div>
         </div>
 
-        <main class="main">
+        <main class="main hidden">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
                 <div class="home__container container grid">
@@ -430,7 +437,7 @@
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+        <footer class="footer hidden section">
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <h3 class="footer__title">Our information</h3>
@@ -493,7 +500,7 @@
         </footer>
 
         <!--=============== SCROLL UP ===============-->
-        <a class="scrollup" id="scroll-up" href="#">
+        <a class="scrollup hidden" id="scroll-up" href="#">
             <i class='bx bx-up-arrow-alt scrollup__icon'></i>
         </a>
 
