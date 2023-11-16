@@ -10,7 +10,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      // Custom Font
+      // Custom Font Family
       fontFamily: {
         body: ['Roboto', ...defaultTheme.fontFamily.sans]
       },
@@ -65,15 +65,16 @@ module.exports = {
         },
         ".fs-normal": {fontSize: "0.938rem", "@media (min-width: 768px)": {fontSize: "1rem",}
         },
-        ".fs-xm": {fontSize: "0.813rem", "@media (min-width: 768px)": {fontSize: "8.75rem", }
+        ".fs-sm": {fontSize: "0.813rem", "@media (min-width: 768px)": {fontSize: "0.875rem", }
         },
-        ".fs-xm": {fontSize: "0.75rem", "@media (min-width: 768px)": {fontSize: "8.13rem",}
+        ".fs-xm": {fontSize: "0.75rem", "@media (min-width: 768px)": {fontSize: "0.813rem",}
         },
         // Responsive Header Height
         ".h-height": {height: "var(--header-height)", "@media (min-width: 768px)": {height: "calc(var(--header-height) + 1.5rem)"}
         },
         // Custom Transition 
         ".trans-ease": {transition: "0.3s"},
+        ".transe-ease-l": {transition: "0.4s"},
       })
     }),
     plugin(function({ addVariant }){

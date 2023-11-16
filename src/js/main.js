@@ -34,13 +34,13 @@ const cart = document.getElementById('cart'),
 // Show Cart
 if(cartShop){
     cartShop.addEventListener('click', () => {
-        cart.classList.add('show-cart')
+        cart.classList.add('dynamic-style')
     })
 }
 // Close Cart
 if(cartClose){
     cartClose.addEventListener('click', () => {
-        cart.classList.remove('show-cart')
+        cart.classList.remove('dynamic-style')
     })
 }
 /*=============== CHANGE BACKGROUND HEADER ===============*/
