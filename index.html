@@ -23,41 +23,41 @@
     </head>
     <body class="font-body">
         <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a class="nav__logo fs-2xl" href="#">
-                    <i class='bx bxs-watch nav__logo-icon'></i> Rolex
+        <header class="fixed top-0 left-0 w-full h-height bg-transparent trans-ease z-fixed" id="header">
+            <nav class="container h-height flex justify-between items-center">
+                <a class="text-c-title uppercase font-bold tracking-[1px] inline-flex items-center gap-x-1" href="#">
+                    <i class='bx bxs-watch text-[1.25rem]'></i> Rolex
                 </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
+                <div class="fixed md:static top-0 -right-full dynamic-style:right-0 w-full h-full bg-c-container pt-[6rem] md:pt-0 pb-8 md:pb-0 px-14 trans-ease" id="nav-menu">
+                    <ul class="flex flex-col md:flex-row items-center gap-8 md:h-full">
                         <li class="nav__item">
-                            <a class="nav__link" href="#home">Home</a>
+                            <a class="fs-xl md:fs-normal font-medium uppercase md:normal-case text-c-title trans-ease hover:text-c-first" href="#home">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#featured">Featured</a>
+                            <a class="fs-xl md:fs-normal font-medium uppercase md:normal-case text-c-title trans-ease hover:text-c-first" href="#featured">Featured</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#products">Products</a>
+                            <a class="fs-xl md:fs-normal font-medium uppercase md:normal-case text-c-title trans-ease hover:text-c-first" href="#products">Products</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#new">New</a>
+                            <a class="fs-xl md:fs-normal font-medium uppercase md:normal-case text-c-title trans-ease hover:text-c-first" href="#new">New</a>
                         </li>
                     </ul>
-                    <button class="nav__close" id="nav-close">
+                    <button class="absolute md:hidden top-4 right-6 text-[2rem] text-c-title" id="nav-close">
                         <i class='bx bx-x'></i>
                     </button>
                 </div>
-                <div class="nav__btns">
+                <div class="flex items-center gap-x-4">
                     <!-- Dark Theme Button -->
-                    <button>
+                    <button class="text-[1.25rem] text-c-title">
                         <i class='bx bx-moon change-theme' id="theme-button"></i>
                     </button>
                     <!-- Shop Button -->
-                    <button class="nav__shop" id="cart-shop">
+                    <button class="text-[1.25rem] text-c-title" id="cart-shop">
                         <i class='bx bx-cart' ></i>
                     </button>
                     <!-- Navigation Toggle Button -->
-                    <button class="nav__toggle" id="nav-toggle">
+                    <button class="text-[1.25rem] text-c-title md:hidden" id="nav-toggle">
                         <i class='bx bx-grid-alt' ></i>
                     </button>
                 </div>

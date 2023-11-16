@@ -6,12 +6,12 @@
     :root {
         /* Header Hegiht */
         --header-height: 3.5rem;
-        
         /* Color pallets variable values for default theme */
         --container-color: 0deg 0% 100%;
         --body-color: 0deg 0% 99%;
         --border-color: 0deg 0% 94%;
         --first-color: 31deg 100% 70%;
+        --title-color: 0deg 0% 15%;
         --btn-color: 0deg 0% 17%;
         --btn-color-alt: 0deg 0% 21%;
         --text-color: 0deg 0% 35%;

@@ -33,6 +33,7 @@ module.exports = {
       "c-body": "hsl(var(--body-color) / <alpha-value>)",
       "c-border": "hsl(var(--border-color) / <alpha-value>)",
       "c-first": "hsl(var(--first-color) / <alpha-value>)",
+      "c-title": "hsl(var(--title-color) / <alpha-value>)",
       "c-btn": "hsl(var(--btn-color) / <alpha-value>)",
       "c-btn-alt": "hsl(var(--btn-color-alt) / <alpha-value>)",
       "c-prime": "hsl(var(--text-color) / <alpha-value>)",
@@ -51,7 +52,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function({addUtilities}){
+    plugin(function({ addUtilities }){
       addUtilities({
         // Responsive Typography
         ".fs-2xl": {fontSize: "2rem", "@media (min-width: 768px)": {fontSize: "2.5rem"}
@@ -71,8 +72,13 @@ module.exports = {
         // Responsive Header Height
         ".h-height": {height: "var(--header-height)", "@media (min-width: 768px)": {height: "calc(var(--header-height) + 1.5rem)"}
         },
+        // Custom Transition 
+        ".trans-ease": {transition: "0.3s"},
       })
-    })
+    }),
+    plugin(function({ addVariant }){
+      addVariant("dynamic-style", ".dynamic-style&")
+    }),
   ],
 }
 
