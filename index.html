@@ -21,14 +21,14 @@
 
         <title>Rolex watches website</title>
     </head>
-    <body class="font-body">
+    <body class="font-body bg-c-body text-c-prime transe-ease-l">
         <!--==================== HEADER ====================-->
         <header class="fixed top-0 left-0 w-full h-height bg-transparent trans-ease z-fixed" id="header">
             <nav class="container h-height flex justify-between items-center">
                 <a class="text-c-title uppercase font-bold tracking-[1px] inline-flex items-center gap-x-1" href="#">
                     <i class='bx bxs-watch text-[1.25rem]'></i> Rolex
                 </a>
-                <div class="fixed md:static top-0 -right-full dynamic-style:right-0 w-full h-full bg-c-container pt-[6rem] md:pt-0 pb-8 md:pb-0 px-14 trans-ease" id="nav-menu">
+                <div class="fixed md:static top-0 -right-full dynamic-style:right-0 w-full h-full bg-c-container md:bg-transparent pt-[6rem] md:pt-0 pb-8 md:pb-0 px-14 trans-ease" id="nav-menu">
                     <ul class="flex flex-col md:flex-row items-center gap-8 md:h-full">
                         <li class="nav__item">
                             <a class="fs-xl md:fs-normal font-medium uppercase md:normal-case text-c-title trans-ease hover:text-c-first" href="#home">Home</a>
@@ -71,6 +71,7 @@
             </button>
             <h2 class="text-center fs-lg font-semibold mb-6">My Cart</h2>
             <div class="grid gap-y-6">
+                <!-- Cart Item - 1 -->
                 <article class="flex items-center justify-between w-[320px] justify-self-center">
                     <div class="bg-c-container py-3 px-5 border-[1px] border-solid border-c-border">
                         <img class="w-[50px]" src="./src/images/featured1.png" alt="Product Image">
@@ -94,6 +95,7 @@
                         </div>
                     </div>
                 </article>
+                <!-- Cart Item - 2 -->
                 <article class="flex items-center justify-between w-[320px] justify-self-center">
                     <div class="bg-c-container py-3 px-5 border-[1px] border-solid border-c-border">
                         <img class="w-[50px]" src="./src/images/featured2.png" alt="Product Image">
@@ -117,6 +119,7 @@
                         </div>
                     </div>
                 </article>
+                <!-- Cart Item - 3 -->
                 <article class="flex items-center justify-between w-[320px] justify-self-center">
                     <div class="bg-c-container py-3 px-5 border-[1px] border-solid border-c-border">
                         <img class="w-[50px]" src="./src/images/featured3.png" alt="Product Image">
@@ -149,36 +152,36 @@
             </div>
         </div>
 
-        <main class="main hidden">
+        <main class="overflow-hidden">
             <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <div class="home__container container grid">
-                    <div class="home__img-bg">
-                        <img class="home__img" src="./src/images/home.png" alt="">
+            <section id="home">
+                <div class="container relative grid md:grid-cols-[450px_1fr] lg:grid-cols-[475px_1fr] md:items-center gap-y-10 md:pt-24">
+                    <div class="relative w-[260px] xm:w-[240px] sm:w-[350px] lg:w-[480px] h-[430px] lg:h-[680px] flex justify-center items-end bg-c-first pb-8 justify-self-end translate-x-4 md:-translate-y-24 md:order-1">
+                        <img class="w-[240px] xm:w-[220px] lg:w-[420px]" src="./src/images/home.png" alt="Home Image">
                     </div>
-                    <div class="home__social">
-                        <a class="home__social-link" target="_blank" href="https://www.facebook.com">
+                    <div class="absolute top-[35%] xm:top-[30%] md:top-[47%] left-[-4rem] lg:left-[-5rem] rotate-90 flex gap-x-4 md:gap-x-8">
+                        <a class="fs-sm text-c-prime trans-ease hover:text-c-title" target="_blank" href="https://www.facebook.com">
                             Facebook
                         </a>
-                        <a class="home__social-link" target="_blank" href="https://www.twitter.com">
+                        <a class="fs-sm text-c-prime trans-ease hover:text-c-title" target="_blank" href="https://www.twitter.com">
                             Twitter
                         </a>
-                        <a class="home__social-link" target="_blank" href="https://www/instagram.com">
+                        <a class="fs-sm text-c-prime trans-ease hover:text-c-title" target="_blank" href="https://www/instagram.com">
                             Instagram
                         </a>
                     </div>
-                    <div class="home__data">
-                        <h1 class="home__title">NEW WATCH <br> COLLECTIONS B720</h1>
-                        <p class="home__description">
+                    <div class="md:pl-20 lg:pl-24 md:pb-24 lg:pb-32">
+                        <h1 class="fs-2xl xm:fs-xl font-bold text-c-title mb-4">NEW WATCH <br> COLLECTIONS B720</h1>
+                        <p class="mb-6">
                             Latest arrival of the new imported watches of the B720 series, 
                             with a modern and resistant design.
                         </p>
-                        <span class="home__price">$1250</span>
-                        <div class="home__btns">
-                            <a class="button button--gray button--small" href="#">
+                        <span class="inline-block fs-md font-medium text-c-first mb-12">$1250</span>
+                        <div class="flex items-center">
+                            <a class="btn btn-small btn-gray xm:fs-sm" href="#">
                                 Discover
                             </a>
-                            <a class="home__button button" href="#">
+                            <a class="btn btn-dark hover:bg-c-btn-alt xm:fs-sm" href="#">
                                 ADD TO CART
                             </a>
                         </div>
@@ -187,7 +190,7 @@
             </section>
 
             <!--==================== FEATURED ====================-->
-            <section class="featured section container" id="featured">
+            <section class="featured section container hidden" id="featured">
                 <h2 class="section__title">
                     Featured
                 </h2>
@@ -229,7 +232,7 @@
             </section>
 
             <!--==================== STORY ====================-->
-            <section class="story section container">
+            <section class="story section container hidden">
                 <div class="story__container grid">
                     <div class="story__data">
                         <h2 class="section__title story__section-title">
@@ -252,7 +255,7 @@
             </section>
 
             <!--==================== PRODUCTS ====================-->
-            <section class="products section container" id="products">
+            <section class="products section container hidden" id="products">
                 <h2 class="section__title">
                     Products
                 </h2>
@@ -301,7 +304,7 @@
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section container">
+            <section class="testimonial section container hidden">
                 <div class="testimonial__container grid">
                     <div class="testimonial-swiper swiper">
                         <div class="swiper-wrapper">
@@ -375,7 +378,7 @@
             </section>
 
             <!--==================== NEW ====================-->
-            <section class="new section container" id="new">
+            <section class="new section container hidden" id="new">
                <h2 class="section__title">
                 New Arrivals
                </h2>
@@ -424,7 +427,7 @@
             </section>
 
             <!--==================== NEWSLETTER ====================-->
-            <section class="newsletter section container">
+            <section class="newsletter section container hidden">
                 <div class="newslatter__bg grid">
                     <div>
                         <h2 class="newslatter__title">

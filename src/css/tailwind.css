@@ -16,6 +16,28 @@
         --btn-color-alt: 0deg 0% 21%;
         --text-color: 0deg 0% 35%;
         --text-color-light: 0deg 0% 55%;
+        --white: #fff;
+        --black: #000;
+    }
+}
+
+@layer components {
+    /* Custon Button Styles */
+    .btn {
+        @apply inline-block font-medium px-8 py-5 trans-ease;
+    }
+    .btn-small {
+        @apply px-6 py-4;
+    }
+    .btn-gray {
+        color: var(--black);
+        background-color: hsl(0, 0%, 75%);
+        &:hover{
+            background-color: hsl(0, 0%, 63%)
+        }
+    }
+    .btn-dark {
+        @apply bg-c-btn text-c-white;
     }
 }
 
