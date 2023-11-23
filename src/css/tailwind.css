@@ -37,7 +37,7 @@
         }
     }
     .btn-dark {
-        @apply bg-c-btn text-c-white;
+        @apply bg-c-btn text-c-white hover:bg-c-btn-alt;
     }
 }
 
