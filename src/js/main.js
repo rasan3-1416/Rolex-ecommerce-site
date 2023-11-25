@@ -44,15 +44,15 @@ if(cartClose){
     })
 }
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-// function scrollHeader(){
-//     const header = document.querySelector('#header')
-//     if(this.scrollY >= 80){
-//         header.classList.add('scrolled-header')
-//     }else{
-//         header.classList.remove('scrolled-header')
-//     }
-// }
-// window.addEventListener('scroll', scrollHeader)
+function scrollHeader(){
+    const header = document.querySelector('#header')
+    if(this.scrollY >= 80){
+        header.classList.add('dynamic-style')
+    }else{
+        header.classList.remove('dynamic-style')
+    }
+}
+window.addEventListener('scroll', scrollHeader)
 /*=============== TESTIMONIAL SWIPER ===============*/
 // let testimonialSwiper = new Swiper('.testimonial-swiper', {
 //     spaceBetween : 30,

@@ -39,6 +39,21 @@
     .btn-dark {
         @apply bg-c-btn text-c-white hover:bg-c-btn-alt;
     }
+    /* Custom Section Styles */
+    .section {
+        
+    }
+}
+
+@layer utilities {
+    /* Hide scroll bar for Chrome/Safari/Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        opacity: 0;
+    }
+    /* hide scroll bar for IE/Edge/FireFox */
+    .no-scrollbar {
+        scrollbar-width: none;
+    }
 }
 
 body.dark-theme {

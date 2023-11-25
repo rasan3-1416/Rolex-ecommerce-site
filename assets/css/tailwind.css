@@ -636,6 +636,11 @@ video {
   background-color: hsl(var(--btn-color-alt) / var(--tw-bg-opacity));
 }
 
+/* Custom Section Styles */
+
+.section {
+}
+
 .fixed {
   position: fixed;
 }
@@ -826,8 +831,8 @@ video {
   overflow: hidden;
 }
 
-.overflow-y-auto {
-  overflow-y: auto;
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .border-\[1px\] {
@@ -1028,8 +1033,20 @@ video {
   transition: 0.3s;
 }
 
-.transe-ease-l {
+.trans-ease-l {
   transition: 0.4s;
+}
+
+/* Hide scroll bar for Chrome/Safari/Opera */
+
+.no-scrollbar::-webkit-scrollbar {
+  opacity: 0;
+}
+
+/* hide scroll bar for IE/Edge/FireFox */
+
+.no-scrollbar {
+  scrollbar-width: none;
 }
 
 body.dark-theme {
@@ -1055,6 +1072,17 @@ body.dark-theme {
 
 .dynamic-style.dynamic-style\:right-0 {
   right: 0px;
+}
+
+.dynamic-style.dynamic-style\:bg-c-body {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--body-color) / var(--tw-bg-opacity));
+}
+
+.dynamic-style.dynamic-style\:shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (max-width: 320px) {

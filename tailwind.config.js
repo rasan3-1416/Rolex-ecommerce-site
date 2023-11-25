@@ -66,7 +66,7 @@ module.exports = {
         },
         // Custom Transition 
         ".trans-ease": {transition: "0.3s"},
-        ".transe-ease-l": {transition: "0.4s"},
+        ".trans-ease-l": {transition: "0.4s"},
       })
     }),
     plugin(function({ addVariant }){
