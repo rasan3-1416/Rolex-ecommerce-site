@@ -19,6 +19,9 @@
         --white: #fff;
         --black: #000;
     }
+    h1,h2,h3 {
+        @apply text-c-title font-bold;
+    }
 }
 
 @layer components {
@@ -41,7 +44,13 @@
     }
     /* Custom Section Styles */
     .section {
-        
+        @apply pt-[6.5rem] md:pt-32 pb-4;
+    }
+    .section-title {
+        @apply relative fs-md lg:fs-lg mb-12 uppercase text-center tracking-[2px];
+    }
+    .section-title::before {
+        @apply content-[''] absolute -top-4 left-0 right-0 my-0 mx-auto w-[70px] h-[1px] bg-c-first;
     }
 }
 
