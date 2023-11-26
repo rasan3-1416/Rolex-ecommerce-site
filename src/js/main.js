@@ -113,22 +113,28 @@ const themeButton = document.getElementById('theme-button')
 const themeButtonIcon = document.querySelector('#theme-button i')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
-// Previously Selected (If user selected)
+
+// Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
-// We obtain the current theme that the interface has by validating the dark theme class
-const getCurrentTheme = () => {
-    document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButtonIcon.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButtonIcon.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
-const getCurrentIcon = () => {
-    themeButtonIcon.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-moon'
-}
-// Activate / Deactivate the theme menually by clicking the theme button
+
+// Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or Remove the dark / Icon theme
+    // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButtonIcon.classList.toggle(iconTheme)
-    // We save the current theme and the current icon that the user have chose
+    // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
