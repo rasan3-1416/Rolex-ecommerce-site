@@ -109,25 +109,26 @@ window.addEventListener('scroll', scrollHeader)
 // window.addEventListener('scroll', scrollUp)
 
 /*=============== DARK LIGHT THEME ===============*/ 
-// const themeButton = document.getElementById('theme-button')
-// const darkTheme = 'dark-theme'
-// const iconTheme = 'bx-sun'
+const themeButton = document.getElementById('theme-button')
+const themeButtonIcon = document.querySelector('#theme-button i')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
 // Previously Selected (If user selected)
-// const selectedTheme = localStorage.getItem('selected-theme')
-// const selectedIcon = localStorage.getItem('selected-icon')
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
 // We obtain the current theme that the interface has by validating the dark theme class
-// const getCurrentTheme = () => {
-//     document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-// }
-// const getCurrentIcon = () => {
-//     themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-moon'
-// }
+const getCurrentTheme = () => {
+    document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+}
+const getCurrentIcon = () => {
+    themeButtonIcon.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-moon'
+}
 // Activate / Deactivate the theme menually by clicking the theme button
-// themeButton.addEventListener('click', () => {
+themeButton.addEventListener('click', () => {
     // Add or Remove the dark / Icon theme
-    // document.body.classList.toggle(darkTheme)
-    // themeButton.classList.toggle(iconTheme)
+    document.body.classList.toggle(darkTheme)
+    themeButtonIcon.classList.toggle(iconTheme)
     // We save the current theme and the current icon that the user have chose
-//     localStorage.setItem('selected-theme', getCurrentTheme())
-//     localStorage.setItem('selected-icon', getCurrentIcon())
-// })
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
