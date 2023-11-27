@@ -86,3 +86,28 @@ body.dark-theme #header.dynamic-style #cart-shop,
 body.dark-theme #header.dynamic-style #nav-toggle {
     @apply text-c-white;
 }
+
+/* Testimonial Navigation Button Styles */
+/* #swiper-button-prev {
+    top: initial;
+    width: initial;
+    height: initial;
+    @apply bottom-[5%] text-[1.5rem] text-c-first bg-c-container shadow-md p-1;
+    &::after {
+        content: '';
+    }
+}
+#swiper-button-next {
+    top: initial;
+    right: initial;
+    width: initial;
+    height: initial;
+    @apply left-16 bottom-[5%] text-[1.5rem] text-c-first bg-c-container shadow-md p-1;
+    &::after {
+        content: '';
+    }
+} */
+/* #swiper-button-prev::after,
+#swiper-button-next::after {
+    content: '';
+} */

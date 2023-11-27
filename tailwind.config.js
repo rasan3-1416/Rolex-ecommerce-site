@@ -18,6 +18,17 @@ module.exports = {
       zIndex: {
         "tooltip": 10,
         "fixed": 100,
+      },
+      // Initial Width and Height value
+      width: {
+        "initial": "initial",
+      },
+      height: {
+        "initial": "initial",
+      },
+      // Initial Spacing Value
+      spacing: {
+        "initial": "initial",
       }
     },
     screens: {
