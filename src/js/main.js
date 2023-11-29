@@ -16,6 +16,7 @@ if(navClose){
         navMenu.classList.remove('dynamic-style')
     })
 }
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('#nav-menu ul li a')
 
@@ -43,6 +44,7 @@ if(cartClose){
         cart.classList.remove('dynamic-style')
     })
 }
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
     const header = document.querySelector('#header')
@@ -53,6 +55,7 @@ function scrollHeader(){
     }
 }
 window.addEventListener('scroll', scrollHeader)
+
 /*=============== TESTIMONIAL SWIPER ===============*/
 let testimonialSwiper = new Swiper('.testimonial-swiper', {
     spaceBetween : 30,
@@ -97,16 +100,18 @@ let newSwiper = new Swiper('.new-swiper', {
 //     })
 // }
 // window.addEventListener('scroll', scrollActive)
+
 /*=============== SHOW SCROLL UP ===============*/ 
-// function scrollUp(){
-//     const scrollUp = document.querySelector('#scroll-up')
-//     if(this.scrollY >= 400){
-//         scrollUp.classList.add('show-scroll')
-//     }else{
-//         scrollUp.classList.remove('show-scroll')
-//     }
-// }
-// window.addEventListener('scroll', scrollUp)
+function scrollUp(){
+    const scrollUp = document.querySelector('#scroll-up')
+    if(this.scrollY >= 400){
+        scrollUp.classList.add('dynamic-style')
+    }else{
+        scrollUp.classList.remove('dynamic-style')
+    }
+}
+
+window.addEventListener('scroll', scrollUp)
 
 /*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
