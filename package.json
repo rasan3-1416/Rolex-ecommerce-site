@@ -1,7 +1,7 @@
 {
   "name": "rolex-ecomerce-site",
-  "version": "1.0.0",
-  "description": "This is an ecomerce site build using HTML,CSS and JavaScript.",
+  "version": "2.0.0",
+  "description": "This is an ecomerce site build using HTML,CSS, TailWindCss and JavaScript.",
   "main": "index.html",
   "scripts": {
     "build-tail-css": "tailwindcss -i ./src/css/tailwind.css -o ./assets/css/tailwind.css --watch",
