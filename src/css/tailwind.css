@@ -16,8 +16,8 @@
         --btn-color-alt: 0deg 0% 21%;
         --text-color: 0deg 0% 35%;
         --text-color-light: 0deg 0% 55%;
-        --white: #fff;
-        --black: #000;
+        --white: 0 0% 100%;
+        --black: 0 0% 0%;
     }
     h1,h2,h3 {
         @apply text-c-title font-bold;
@@ -33,7 +33,7 @@
         @apply px-6 py-4;
     }
     .btn-gray {
-        color: var(--black);
+        @apply text-c-black;
         background-color: hsl(0, 0%, 75%);
         &:hover{
             background-color: hsl(0, 0%, 63%)
@@ -82,7 +82,7 @@ body.dark-theme #cart {
 }
 /* Header Icon color change on dark theme only when the header have the dynamic class */
 body.dark-theme #header.dynamic-style #theme-button,
-body.dark-theme #header.dynamic-style #cart-shop,
+body.dark-theme #header.dynamic-style #cart-btn,
 body.dark-theme #header.dynamic-style #nav-toggle {
     @apply text-c-white;
 }

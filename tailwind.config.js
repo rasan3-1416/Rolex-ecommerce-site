@@ -50,8 +50,8 @@ module.exports = {
       "c-btn-alt": "hsl(var(--btn-color-alt) / <alpha-value>)",
       "c-prime": "hsl(var(--text-color) / <alpha-value>)",
       "c-prime-light": "hsl(var(text-color-light) / <alpha-value>)",
-      "c-white": "var(--white)",
-      "c-black": "var(--black)",
+      "c-white": "hsl(var(--white) / <alpha-value>)",
+      "c-black": "hsl(var(--black) / <alpha-value>)",
     },
   },
   plugins: [

@@ -21,7 +21,7 @@
 
         <title>Rolex watches website</title>
     </head>
-    <body class="font-body fs-normal bg-c-body text-c-prime trans-ease-l">
+    <body class="font-body fs-normal bg-c-body text-c-prime trans-ease-l dynamic-style:overflow-hidden">
         <!--==================== HEADER ====================-->
         <header class="fixed top-0 left-0 w-full h-height bg-transparent dynamic-style:bg-c-body dynamic-style:shadow-md trans-ease z-fixed" id="header">
             <nav class="container h-height flex justify-between items-center">
@@ -53,7 +53,7 @@
                         <i class='bx bx-moon change-theme'></i>
                     </button>
                     <!-- Shop Button -->
-                    <button class="text-[1.25rem] text-c-black" id="cart-shop">
+                    <button class="text-[1.25rem] text-c-black" id="cart-btn">
                         <i class='bx bx-cart' ></i>
                     </button>
                     <!-- Navigation Toggle Button -->
@@ -65,7 +65,8 @@
         </header>
 
         <!--==================== CART ====================-->
-        <div class="fixed top-0 -right-full dynamic-style:right-0 w-full sm:w-[380px] md:w-[400px] h-full bg-c-body z-fixed py-14 px-8 xm:px-0 trans-ease-l sm:shadow-md overflow-y-scroll no-scrollbar" id="cart">
+        <div class="fixed z-[101] top-0 left-0 w-full h-full bg-c-black/50 invisible opacity-0 dynamic-style:visible dynamic-style:opacity-100 trans-ease" id="cart-overlay"></div>
+        <div class="fixed z-[102] top-0 -right-full dynamic-style:right-0 w-full h-full sm:w-[380px] md:w-[400px] bg-c-container py-14 px-8 xm:px-0 sm:shadow-md overflow-y-scroll no-scrollbar trans-ease-l" id="cart">
             <button class="absolute top-4 right-6 text-[2rem] text-c-title" id="cart-close">
                 <i class='bx bx-x'></i>
             </button>
@@ -151,6 +152,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <main class="overflow-hidden">
             <!--==================== HOME ====================-->

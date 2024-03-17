@@ -1,3 +1,6 @@
+
+let body = document.querySelector('body')
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.querySelector('#nav-menu'),
       navToggle = document.querySelector('#nav-toggle'),
@@ -6,6 +9,7 @@ const navMenu = document.querySelector('#nav-menu'),
 /* =========== Menu Show ============= */
 if(navToggle){
     navToggle.addEventListener('click', () => {
+        body.classList.add('dynamic-style')
         navMenu.classList.add('dynamic-style')
     })
 }
@@ -13,6 +17,7 @@ if(navToggle){
 /* =========== Menu Hide ============= */
 if(navClose){
     navClose.addEventListener('click', () => {
+        body.classList.remove('dynamic-style')
         navMenu.classList.remove('dynamic-style')
     })
 }
@@ -30,20 +35,26 @@ navLink.forEach((element) => {
 
 /*=============== SHOW CART ===============*/
 const cart = document.getElementById('cart'),
-      cartShop = document.getElementById('cart-shop'),
+      cartOverlay = document.getElementById('cart-overlay'),
+      cartBtn = document.getElementById('cart-btn'),
       cartClose = document.getElementById('cart-close')
-// Show Cart
-if(cartShop){
-    cartShop.addEventListener('click', () => {
-        cart.classList.add('dynamic-style')
-    })
-}
-// Close Cart
-if(cartClose){
-    cartClose.addEventListener('click', () => {
+
+// Cart Open
+cartBtn.addEventListener('click', () => {
+    body.classList.add('dynamic-style')
+    cartOverlay.classList.add('dynamic-style')
+    cart.classList.add('dynamic-style')
+})
+
+// Cart Close
+let cartCloseEls = [cartOverlay,cartClose]
+cartCloseEls.forEach(closeEl => {
+    closeEl.addEventListener('click', function() {
+        body.classList.remove('dynamic-style')
+        cartOverlay.classList.remove('dynamic-style')
         cart.classList.remove('dynamic-style')
     })
-}
+})
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){

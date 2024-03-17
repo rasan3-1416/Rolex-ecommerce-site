@@ -447,8 +447,8 @@ video {
   --btn-color-alt: 0deg 0% 21%;
   --text-color: 0deg 0% 35%;
   --text-color-light: 0deg 0% 55%;
-  --white: #fff;
-  --black: #000;
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
 }
 
 h1,h2,h3 {
@@ -624,7 +624,8 @@ h1,h2,h3 {
 }
 
 .btn-gray {
-  color: var(--black);
+  --tw-text-opacity: 1;
+  color: hsl(var(--black) / var(--tw-text-opacity));
   background-color: hsl(0, 0%, 75%);
   &:hover{
     background-color: hsl(0, 0%, 63%)
@@ -634,7 +635,8 @@ h1,h2,h3 {
 .btn-dark {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--btn-color) / var(--tw-bg-opacity));
-  color: var(--white);
+  --tw-text-opacity: 1;
+  color: hsl(var(--white) / var(--tw-text-opacity));
 }
 
 .btn-dark:hover {
@@ -691,6 +693,10 @@ h1,h2,h3 {
   background-color: hsl(var(--first-color) / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .fixed {
@@ -783,6 +789,14 @@ h1,h2,h3 {
 
 .top-initial {
   top: initial;
+}
+
+.z-\[101\] {
+  z-index: 101;
+}
+
+.z-\[102\] {
+  z-index: 102;
 }
 
 .z-fixed {
@@ -888,17 +902,17 @@ h1,h2,h3 {
   height: 60px;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-initial {
   height: initial;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .w-\[240px\] {
@@ -1076,6 +1090,10 @@ h1,h2,h3 {
   border-color: hsl(var(--border-color) / var(--tw-border-opacity));
 }
 
+.bg-c-black\/50 {
+  background-color: hsl(var(--black) / 0.5);
+}
+
 .bg-c-body {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--body-color) / var(--tw-bg-opacity));
@@ -1097,7 +1115,8 @@ h1,h2,h3 {
 }
 
 .bg-c-white {
-  background-color: var(--white);
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--white) / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -1240,7 +1259,8 @@ h1,h2,h3 {
 }
 
 .text-c-black {
-  color: var(--black);
+  --tw-text-opacity: 1;
+  color: hsl(var(--black) / var(--tw-text-opacity));
 }
 
 .text-c-first {
@@ -1259,7 +1279,8 @@ h1,h2,h3 {
 }
 
 .text-c-white {
-  color: var(--white);
+  --tw-text-opacity: 1;
+  color: hsl(var(--white) / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1396,9 +1417,10 @@ body.dark-theme #cart {
 /* Header Icon color change on dark theme only when the header have the dynamic class */
 
 body.dark-theme #header.dynamic-style #theme-button,
-body.dark-theme #header.dynamic-style #cart-shop,
+body.dark-theme #header.dynamic-style #cart-btn,
 body.dark-theme #header.dynamic-style #nav-toggle {
-  color: var(--white);
+  --tw-text-opacity: 1;
+  color: hsl(var(--white) / var(--tw-text-opacity));
 }
 
 /* Testimonial Navigation Button Styles */
@@ -1492,11 +1514,16 @@ body.dark-theme #header.dynamic-style #nav-toggle {
 }
 
 .group:hover .group-hover\:text-c-black {
-  color: var(--black);
+  --tw-text-opacity: 1;
+  color: hsl(var(--black) / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+.dynamic-style.dynamic-style\:visible {
+  visibility: visible;
 }
 
 .dynamic-style.dynamic-style\:bottom-12 {
@@ -1507,6 +1534,10 @@ body.dark-theme #header.dynamic-style #nav-toggle {
   right: 0px;
 }
 
+.dynamic-style.dynamic-style\:overflow-hidden {
+  overflow: hidden;
+}
+
 .dynamic-style.dynamic-style\:bg-c-body {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--body-color) / var(--tw-bg-opacity));
@@ -1515,6 +1546,10 @@ body.dark-theme #header.dynamic-style #nav-toggle {
 .dynamic-style.dynamic-style\:text-c-first {
   --tw-text-opacity: 1;
   color: hsl(var(--first-color) / var(--tw-text-opacity));
+}
+
+.dynamic-style.dynamic-style\:opacity-100 {
+  opacity: 1;
 }
 
 .dynamic-style.dynamic-style\:shadow-md {
