@@ -26,6 +26,7 @@ if(navClose){
 const navLink = document.querySelectorAll('#nav-menu ul li a')
 
 function linkAction(){
+    body.classList.remove('dynamic-style')
     navMenu.classList.remove('dynamic-style')
 }
 
