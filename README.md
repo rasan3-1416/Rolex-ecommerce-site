@@ -1,5 +1,5 @@
 # Responsive Watches Website ⌚
-## [Visit Live Site](https://rasan3-1416.github.io/Rolex-ecomerce-site/)
+## [Visit Live Site](https://rolex-ecommerce.vercel.app/)
 ### Responsive Watches Website ⌚
 
 The project I clone from [Bedimcode](https://www.youtube.com/c/Bedimcode) and website template: [Responsive Tasty Food](https://youtu.be/QPxYdbbCjhQ?si=nneIT4t5Xrfch9tb)
